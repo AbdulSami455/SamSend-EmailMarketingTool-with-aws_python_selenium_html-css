@@ -11,8 +11,12 @@ response=ses.list_verified_email_addresses()
         'HtmlPart': 'string3'
     }
 )'''
+
+#Listing ALl Templates
 response=ses.list_templates()
 print(response)
+
+#Sending Email
 response22=ses.send_email(
     Source='as1987137@gmail.com',
     Destination={
