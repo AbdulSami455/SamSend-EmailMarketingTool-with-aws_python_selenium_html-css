@@ -52,3 +52,5 @@ def enterData(tablename,templatename,subject,body,html):
         } )
 
  print('Data inserted into the table.')
+
+
