@@ -3,9 +3,9 @@ import boto3
 dynamodb=boto3.client('dynamodb', region_name='eu-north-1')
 
 
-def createtable():
+def createtable(tablename):
 
- table_name = 'EmailTemplates'
+ table_name = tablename
 # Create the DynamoDB table
  dynamodb.create_table(
     TableName=table_name,
