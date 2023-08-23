@@ -27,6 +27,8 @@ def createtable():
     })
 
  print(dynamodb)
+
+
 table_name = 'EmailTemplates'
 
 dynamodb.get_waiter('table_exists').wait(TableName=table_name)
