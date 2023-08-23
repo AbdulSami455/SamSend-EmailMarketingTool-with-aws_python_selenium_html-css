@@ -28,18 +28,18 @@ def createtable(tablename):
 
  print(dynamodb)
 
-def enterData():
- table_name = 'EmailTemplates'
+def enterData(tablename,templatename,subject,body,html):
+ table_name = tablename
 
  dynamodb.get_waiter('table_exists').wait(TableName=table_name)
 
  # Insert data into the table
  template_data = [
     {
-        'TemplateName': 'Template1',
-        'Subject': 'Welcome to Our Newsletter',
-        'Body': 'Dear {{name}}, welcome to our newsletter...',
-        'Html':'____'
+        'TemplateName': templatename,
+        'Subject': subject,
+        'Body': body,
+        'Html':html
     }]
 
  for item in template_data:
