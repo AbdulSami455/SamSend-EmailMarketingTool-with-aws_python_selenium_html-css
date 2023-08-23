@@ -28,13 +28,13 @@ def createtable():
 
  print(dynamodb)
 
+def enterData():
+ table_name = 'EmailTemplates'
 
-table_name = 'EmailTemplates'
+ dynamodb.get_waiter('table_exists').wait(TableName=table_name)
 
-dynamodb.get_waiter('table_exists').wait(TableName=table_name)
-
-# Insert data into the table
-template_data = [
+ # Insert data into the table
+ template_data = [
     {
         'TemplateName': 'Template1',
         'Subject': 'Welcome to Our Newsletter',
@@ -46,17 +46,15 @@ template_data = [
         'Subject': 'Important Update',
         'Body': 'Hello, we have an important update for you...',
         'Html':'____'
-    }
-]
+    }]
 
-for item in template_data:
+ for item in template_data:
     dynamodb.put_item(
         TableName=table_name,
         Item={
             'TemplateName': {'S': item['TemplateName']},
             'Subject': {'S': item['Subject']},
             'Body': {'S': item['Body']}
-        }
-    )
+        } )
 
-print('Data inserted into the table.')
+ print('Data inserted into the table.')
