@@ -23,6 +23,8 @@ def list_templates():
  print(response)
 
 
+
+#Send Email Function
 def sendemail():
 
 #Sending Email
