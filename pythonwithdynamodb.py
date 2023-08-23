@@ -37,7 +37,7 @@ def enterData(tablename,templatename,subject,body,html):
         'TemplateName': templatename,
         'Subject': subject,
         'Body': body,
-        'Html':html
+        'Html': html
     }]
 
  for item in template_data:
