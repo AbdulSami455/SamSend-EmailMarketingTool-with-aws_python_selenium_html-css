@@ -51,6 +51,8 @@ def sendemail():
         }
     })
 
+
+#Update Template
 def update_template():
  template_name = 'string3'
 
