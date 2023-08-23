@@ -29,9 +29,7 @@ def createtable(tablename):
  print(dynamodb)
 
 def enterData(tablename,templatename,subject,body,html):
- table_name = tablename
-
- dynamodb.get_waiter('table_exists').wait(TableName=table_name)
+ dynamodb.get_waiter('table_exists').wait(TableName=tablename)
 
  # Insert data into the table
  template_data = [
@@ -44,7 +42,7 @@ def enterData(tablename,templatename,subject,body,html):
 
  for item in template_data:
     dynamodb.put_item(
-        TableName=table_name,
+        TableName=tablename,
         Item={
             'TemplateName': {'S': item['TemplateName']},
             'Subject': {'S': item['Subject']},
