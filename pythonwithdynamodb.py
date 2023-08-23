@@ -40,12 +40,6 @@ def enterData():
         'Subject': 'Welcome to Our Newsletter',
         'Body': 'Dear {{name}}, welcome to our newsletter...',
         'Html':'____'
-    },
-    {
-        'TemplateName': 'Template2',
-        'Subject': 'Important Update',
-        'Body': 'Hello, we have an important update for you...',
-        'Html':'____'
     }]
 
  for item in template_data:
