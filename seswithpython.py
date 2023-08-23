@@ -68,6 +68,9 @@ def update_template():
 
     })
  print(response2)
+
+
+#Send Email with Template
 def sendtemplatedemail():
  template_name = 'string3'
  response = ses.send_templated_email(
