@@ -1,0 +1,10 @@
+Subject: Complete Your Purchase - Items in Your Cart Await You!
+Body:
+Hi [Name],
+
+Noticed something left in your cart? Complete your purchase today and enjoy the items you've selected. Here's a reminder of what's waiting for you.
+
+[List the items with images and prices]
+
+Complete your order now!
+[Your Name]
