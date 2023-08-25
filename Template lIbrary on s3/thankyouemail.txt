@@ -1,0 +1,8 @@
+Subject: Thank You for [Action/Event]!
+Body:
+Dear [Name],
+
+We want to extend a heartfelt thank you for [describe the action/event]. Your support means a lot to us. We're grateful to have you as part of our [community/customers/organization].
+
+With gratitude,
+[Your Name]
