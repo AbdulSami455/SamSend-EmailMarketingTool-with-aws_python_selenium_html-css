@@ -1,8 +1,0 @@
-Subject: You're Invited to [Event Name] on [Date/Time].
-Body:
-Hi [Name],
-
-We're thrilled to invite you to our upcoming event, [Event Name], on [Date] at [Time]. Join us for [describe the event's highlights and purpose]. We look forward to seeing you there!
-
-RSVP now and save your spot.
-[Your Name]

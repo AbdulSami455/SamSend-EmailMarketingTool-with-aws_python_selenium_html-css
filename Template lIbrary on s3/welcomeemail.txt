@@ -1,8 +1,0 @@
-Subject: Welcome to [Organization/Community Name]!
-body:
-Dear [Name],
-
-Welcome to [Organization/Community Name]! We're excited to have you on board. Get ready to embark on a journey of [describe what your organization/community offers]. Here's to a great experience together!
-
-Best regards,
-[Your Name]

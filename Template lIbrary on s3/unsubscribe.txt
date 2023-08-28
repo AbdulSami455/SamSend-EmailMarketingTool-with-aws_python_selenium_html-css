@@ -1,8 +1,0 @@
-Subject: Your Email Preferences Have Been Updated.
-Body:
-Hi,
-
-This is to confirm that your email preferences have been updated. You will no longer receive emails from us. If you wish to resubscribe, please feel free to do so at any time.
-
-Thank you for being a part of our community.
-[Your Name]
