@@ -5,7 +5,7 @@ app=Flask(__name__)
 
 @app.route("/")
 def mainpage():
-    return {'Message':'Hello, I m Abdul Sami'}
+    return render_template('index.html')
 
 
 app.run()
