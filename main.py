@@ -5,6 +5,7 @@ app=Flask(__name__)
 
 @app.route("/")
 def mainpage():
-    return "Hello"
+    return {'Message':'Hello, I m Abdul Sami'}
 
-app.run(port=6000,debug=True)
+
+app.run()
