@@ -9,20 +9,22 @@ body {
   background-color: #f4f4f4;
 }
 
-.h1,.h2,.h3 {
+.h1, .h2, .h3 {
   font-family: Georgia, serif;
   font-size: 25px;
   margin-bottom: 15px;
-  margin-left:20px;
 }
 
 .row {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  align-items: start;
 }
 
 .container,
 .container-2,
-.container-3{
+.container-3 {
   width: 200px;
   height: 300px;
   background-color: #fff;
@@ -30,7 +32,6 @@ body {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   padding: 20px;
   text-align: center;
-  margin: 0 40px;
 }
 
 .image {
