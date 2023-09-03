@@ -18,7 +18,7 @@ body {
 .row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px;
+  grid-gap: 80px;
   align-items: start;
 }
 
