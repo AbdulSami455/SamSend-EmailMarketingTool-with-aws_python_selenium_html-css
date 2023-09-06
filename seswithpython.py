@@ -87,4 +87,4 @@ def sendtemplatedemail():
     Template=template_name,  # Use the template name
     TemplateData='{}',  # You can provide template data if your template expects variables
       )
- print(response)
+ #print(response)
