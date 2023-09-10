@@ -1,22 +1,40 @@
+<!-- form.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
+    <title>Contact Us</title>
 </head>
 <body>
     <h1>Contact Us</h1>
-    <form action="process_form.php" method="POST">
-        <label for="subject">Subject:</label>
-        <input type="text" id="subject" name="subject" required><br><br>
+    <p>Fill out the form below to get in touch with us:</p>
 
-        <label for="body">Body:</label><br>
-        <textarea id="body" name="body" rows="4" cols="50" required></textarea><br><br>
+    <form method="POST" action="/submit">
+        <!-- Text Input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required><br><br>
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
+        <!-- Radio Buttons -->
+        <p>Gender:</p>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label><br>
+
+        <!-- Checkbox -->
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Subscribe to our newsletter</label><br>
+
+        <!-- Textarea -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <!-- Submit Button -->
         <input type="submit" value="Submit">
     </form>
 </body>
