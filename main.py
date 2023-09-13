@@ -10,3 +10,13 @@ def mainpage():
 #
 app.run()
 '''
+import tkinter as tk
+from tkinter import PhotoImage
+import os
+# Create the main window
+root = tk.Tk()
+root.title("SamSend Email Marketing Tool")
+
+root.geometry("1000x600")
+
+root.mainloop()
