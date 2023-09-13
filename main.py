@@ -18,6 +18,14 @@ root = tk.Tk()
 root.title("SamSend Email Marketing Tool")
 root.geometry("1000x600")
 
+
+def composeemail():
+
+def writetemplates():
+
+def composelist():
+
+
 # Create a frame
 composeemail = tk.Frame(master=root,bg="lightblue")
 composeemail.place(x=70, y=180, relwidth=0.2, relheight=0.4)
@@ -41,6 +49,8 @@ image_tk2= ImageTk.PhotoImage(image)
 label2 = tk.Label(composeemail, image=image_tk2)
 label2.configure(text="")
 label2.pack()
+
+
 
 image = Image.open("templates.png")
 image = image.resize((200, 240), Image.ANTIALIAS)
