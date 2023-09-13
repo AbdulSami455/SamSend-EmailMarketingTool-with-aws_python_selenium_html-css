@@ -1,4 +1,4 @@
-from flask import Flask,render_template,jsonify
+'''from flask import Flask,render_template,jsonify
 import seswithpython as sp
 app=Flask(__name__)
 
@@ -9,3 +9,4 @@ def mainpage():
 
 #
 app.run()
+'''
