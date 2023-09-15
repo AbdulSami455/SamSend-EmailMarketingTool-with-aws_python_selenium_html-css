@@ -13,40 +13,45 @@ app.run()
 import tkinter as tk
 from PIL import ImageTk, Image
 import composeemailwindow as cw
+import writetemplates as wt
+import listcompose as lc
+
 # Create the main window
 root = tk.Tk()
 root.title("SamSend Email Marketing Tool")
 root.geometry("1000x600")
 
 
-def composeemail():
+def composeemailf():
   #frame=event.widget
   root.destroy()
   cw.compose()
 
-#def writetemplates():
-
-#def composelist():
-
+def writetemplatesf():
+   root.destroy()
+   wt.write()
+def composelistf():
+   root.destroy()
+   lc.list()
 
 # Create a frame
 composeemail = tk.Frame(master=root,bg="lightblue")
 composeemail.place(x=70, y=180, relwidth=0.2, relheight=0.4)
 
-buttonemail = tk.Button(root, text="Write Email", command=composeemail,bg="lightblue")
+buttonemail = tk.Button(root, text="Write Email", command=composeemailf,bg="lightblue")
 buttonemail.place(x=130,y=430)
 
 writetemplate=tk.Frame(master=root,bg="lightblue")
 writetemplate.place(x=380,y=180,relwidth=0.2,relheight=0.4)
 
-buttontemplate = tk.Button(root, text="Write Templates", command=composeemail,bg="lightblue")
-buttontemplate.place(x=450,y=430)
+buttontemplate = tk.Button(root, text="Write Templates", command=writetemplatesf,bg="lightblue")
+buttontemplate.place(x=410,y=430)
 
 list=tk.Frame(master=root,bg="lightblue")
 list.place(x=690,y=180,relwidth=0.2,relheight=0.4)
 
-buttontemplate = tk.Button(root, text="Write Templates", command=composeemail,bg="lightblue")
-buttontemplate.place(x=450,y=430)
+buttonlist = tk.Button(root, text="ComposeList", command=composelistf,bg="lightblue")
+buttonlist.place(x=690,y=430)
 
 image = Image.open("list.png")
 image = image.resize((200, 240), Image.ANTIALIAS)
