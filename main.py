@@ -32,12 +32,14 @@ def composeemail():
 composeemail = tk.Frame(master=root,bg="lightblue")
 composeemail.place(x=70, y=180, relwidth=0.2, relheight=0.4)
 
-buttonemail = tk.Button(root, text="Click Me!", command=composeemail)
+buttonemail = tk.Button(root, text="Write Email", command=composeemail,bg="lightblue")
 buttonemail.place(x=130,y=430)
-
 
 writetemplate=tk.Frame(master=root,bg="lightblue")
 writetemplate.place(x=380,y=180,relwidth=0.2,relheight=0.4)
+
+buttontemplate = tk.Button(root, text="Write Email", command=composeemail,bg="lightblue")
+buttontemplate.place(x=450,y=430)
 
 list=tk.Frame(master=root,bg="lightblue")
 list.place(x=690,y=180,relwidth=0.2,relheight=0.4)
