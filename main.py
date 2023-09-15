@@ -21,6 +21,7 @@ root.geometry("1000x600")
 
 def composeemail():
   #frame=event.widget
+  root.destroy()
   cw.compose()
 
 #def writetemplates():
@@ -38,11 +39,14 @@ buttonemail.place(x=130,y=430)
 writetemplate=tk.Frame(master=root,bg="lightblue")
 writetemplate.place(x=380,y=180,relwidth=0.2,relheight=0.4)
 
-buttontemplate = tk.Button(root, text="Write Email", command=composeemail,bg="lightblue")
+buttontemplate = tk.Button(root, text="Write Templates", command=composeemail,bg="lightblue")
 buttontemplate.place(x=450,y=430)
 
 list=tk.Frame(master=root,bg="lightblue")
 list.place(x=690,y=180,relwidth=0.2,relheight=0.4)
+
+buttontemplate = tk.Button(root, text="Write Templates", command=composeemail,bg="lightblue")
+buttontemplate.place(x=450,y=430)
 
 image = Image.open("list.png")
 image = image.resize((200, 240), Image.ANTIALIAS)
