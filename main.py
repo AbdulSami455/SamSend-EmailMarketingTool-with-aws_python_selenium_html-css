@@ -51,7 +51,7 @@ list=tk.Frame(master=root,bg="lightblue")
 list.place(x=690,y=180,relwidth=0.2,relheight=0.4)
 
 buttonlist = tk.Button(root, text="ComposeList", command=composelistf,bg="lightblue")
-buttonlist.place(x=690,y=430)
+buttonlist.place(x=660,y=430)
 
 image = Image.open("list.png")
 image = image.resize((200, 240), Image.ANTIALIAS)
