@@ -12,7 +12,7 @@ app.run()
 '''
 import tkinter as tk
 from PIL import ImageTk, Image
-
+import composeemailwindow as cw
 # Create the main window
 root = tk.Tk()
 root.title("SamSend Email Marketing Tool")
@@ -20,6 +20,7 @@ root.geometry("1000x600")
 
 
 def composeemail():
+  cw.compose()
 
 def writetemplates():
 
