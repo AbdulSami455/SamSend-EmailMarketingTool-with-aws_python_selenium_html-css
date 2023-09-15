@@ -51,7 +51,6 @@ image_tk2= ImageTk.PhotoImage(image)
 label2 = tk.Label(composeemail, image=image_tk2)
 label2.configure(text="")
 label2.pack()
-label2.bind("<Button-1>", lambda event:composeemail())
 
 
 image = Image.open("templates.png")
