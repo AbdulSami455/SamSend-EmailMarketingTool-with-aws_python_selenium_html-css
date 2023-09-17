@@ -15,6 +15,7 @@ def display():
 
     # Create a text box to display the template names
     text_box = tk.Text(window, height=10, width=40)
+    text_box.place(x=25,y=25)
     text_box.pack()
 
     # Insert the template names into the text box
