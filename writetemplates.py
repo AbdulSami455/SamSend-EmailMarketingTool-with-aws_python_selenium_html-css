@@ -2,7 +2,7 @@ import tkinter as tk
 import seswithpython as sp
 
 
-def display_templates():
+def display():
     templates = sp.list_templates()
     template_names = [template['Name'] for template in templates['TemplatesMetadata']]
 
@@ -25,4 +25,4 @@ def display_templates():
 
 
 # Call the display_templates function to display template names
-display_templates()
+display()
