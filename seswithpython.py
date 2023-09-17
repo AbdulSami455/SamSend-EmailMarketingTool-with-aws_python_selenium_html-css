@@ -20,7 +20,7 @@ def createtemplate():
 #Listing ALl Templates
 def list_templates():
  response=ses.list_templates()
- print(response)
+ return response
 
 
 
