@@ -25,27 +25,27 @@ def list_templates():
 
 
 #Send Email Function
-def sendemail():
+def sendemail(sourc,dest,subject,body):
 
 #Sending Email
  response22=ses.send_email(
-    Source='as1987137@gmail.com',
+    Source=sourc,
     Destination={
         'ToAddresses': [
-            'msami.bese22seecs@seecs.edu.pk',
+            dest,
         ],
         'CcAddresses': [
-            'msami.bese22seecs@seecs.edu.pk',
+            dest,
         ],
     },
     Message={
         'Subject': {
-            'Data': 'Hello Brother',
+            'Data': subject,
             'Charset': 'utf-8'
         },
         'Body': {
             'Text': {
-                'Data': 'Hi, Consider My Message ',
+                'Data': body,
                 'Charset': 'utf-8'
             }
         }
