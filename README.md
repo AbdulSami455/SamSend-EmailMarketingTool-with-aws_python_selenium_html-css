@@ -10,5 +10,5 @@ Points in this SamSend Project
 3.  Create Email Templates in Aws Ses.
 4.  Send an Email with the Template.
 5.  Update Templates already stored in Ses.
-6.  Get Templates Data in S3
-7.  
+6.  Get Templates Data in S3.
+7.  Enter and Fetch Data in DynamoDb.
