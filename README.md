@@ -5,4 +5,6 @@
 
 
 Points in this SamSend Project 
-1.  Email Compose like GMAIL..
+1.  Email Compose like Gmail..
+2.  Show a list of Email Templates registered in Aws Ses.
+3.  
