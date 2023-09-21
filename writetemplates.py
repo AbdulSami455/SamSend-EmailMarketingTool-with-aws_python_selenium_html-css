@@ -26,4 +26,4 @@ def display():
 
 
 # Call the display_templates function to display template names
-display()
+#display()
