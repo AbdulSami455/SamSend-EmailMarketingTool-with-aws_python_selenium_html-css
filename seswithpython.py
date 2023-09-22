@@ -6,13 +6,13 @@ print(response)
 
 
 #Create Template for Email
-def createtemplate():
+def createtemplate(name,subject,body,html=None):
  response2 = ses.create_template(
     Template={
-        'TemplateName': 'string3',
-        'SubjectPart': 'string3',
-        'TextPart': 'string3',
-        'HtmlPart': 'string3'
+        'TemplateName': name,
+        'SubjectPart': subject,
+        'TextPart': body,
+        'HtmlPart': html
     })
  print(response2)
 

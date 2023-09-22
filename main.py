@@ -42,7 +42,7 @@ def composeemailf():
 
 def writetemplatesf():
    root.destroy()
-   wt.display()
+   wt.display_and_send_template()
 def composelistf():
    root.destroy()
    lc.list()
