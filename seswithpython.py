@@ -67,16 +67,16 @@ def update_template(templatename,updatedsubject,updatedtextbody):
 
 #Send Email with TemplateSend a message
 
-def sendtemplatedemail(templatename):
+def sendtemplatedemail(templatename,source,destination):
 
  response = ses.send_templated_email(
-    Source='as1987137@gmail.com',
+    Source=source,
     Destination={
         'ToAddresses': [
-            'msami.bese22seecs@seecs.edu.pk',
+            destination,
         ],
         'CcAddresses': [
-            'msami.bese22seecs@seecs.edu.pk',
+            destination,
         ],
     },
     Template=templatename,  # Use the template name

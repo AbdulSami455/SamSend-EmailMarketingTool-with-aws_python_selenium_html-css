@@ -33,7 +33,7 @@ def compose():
 
         # After sending the template email, you can clear the template_name entry
         template_name_entry.delete(0, "end")
-
+        sp.sendtemplatedemail(template_name,sender_email,receiver_email)
     # Sender Email Entry
     sender_email_label = tk.Label(dash, text="Sender Email:")
     sender_email_label.pack()
