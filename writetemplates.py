@@ -80,4 +80,4 @@ def display_and_send_template():
 
 
 # Call the display_and_send_template function to display template names and send/update template data
-display_and_send_template()
+#display_and_send_template()
