@@ -15,7 +15,7 @@ def display_and_send_template():
 
     templates = sp.list_templates()
     template_names = [template['Name'] for template in templates['TemplatesMetadata']]
-
+#
     window = tk.Tk()
     window.geometry("800x600")
 
