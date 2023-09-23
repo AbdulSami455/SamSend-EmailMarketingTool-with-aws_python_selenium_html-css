@@ -67,8 +67,8 @@ def update_template(templatename,updatedsubject,updatedtextbody):
 
 #Send Email with TemplateSend a message
 
-def sendtemplatedemail():
- template_name = 'string3'
+def sendtemplatedemail(templatename):
+
  response = ses.send_templated_email(
     Source='as1987137@gmail.com',
     Destination={
@@ -79,7 +79,7 @@ def sendtemplatedemail():
             'msami.bese22seecs@seecs.edu.pk',
         ],
     },
-    Template=template_name,  # Use the template name
+    Template=templatename,  # Use the template name
     TemplateData='{}',  # You can provide template data if your template expects variables
       )
  #print(response)
