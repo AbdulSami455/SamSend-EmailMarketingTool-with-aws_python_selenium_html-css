@@ -15,20 +15,7 @@ from PIL import ImageTk, Image
 import composeemailwindow as cw
 import writetemplates as wt
 import listcompose as lc
-def send_email():
-    sender_email = sender_email_entry.get()
-    receiver_email = receiver_email_entry.get()
-    email_body = email_body_entry.get("1.0", "end-1c")  # Get text from the Text widget
-    email_subject = email_subject_entry.get()
 
-    # Replace this with your email sending logic
-    # For example, you can use the smtplib library to send emails
-
-    # After sending the email, you can clear the entry fields
-    sender_email_entry.delete(0, "end")
-    receiver_email_entry.delete(0, "end")
-    email_body_entry.delete("1.0", "end")
-    email_subject_entry.delete(0, "end")
 # Create the main window
 root = tk.Tk()
 root.title("SamSend Email Marketing Tool")

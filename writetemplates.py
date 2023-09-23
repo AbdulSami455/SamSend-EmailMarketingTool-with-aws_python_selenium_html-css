@@ -9,7 +9,7 @@ def display_and_send_template():
         template_body = template_body_entry.get("1.0", tk.END)[:-1]  # Remove the trailing newline character
         template_subject = template_subject_entry.get()
         template_html = template_html_entry.get("1.0", tk.END)[:-1]  # Remove the trailing newline character
-
+        sp.createtemplate(template_name,template_body,template_subject,template_html)
         # Here, you can use the 'template_name', 'template_body', 'template_subject', and 'template_html'
         # variables to send the data to your desired function or perform any other action.
 
@@ -60,4 +60,4 @@ def display_and_send_template():
     window.mainloop()
 
 # Call the display_and_send_template function to display template names and send template data
-display_and_send_template()
+#display_and_send_template()
