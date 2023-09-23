@@ -1,21 +1,40 @@
 import tkinter as tk
 import seswithpython as sp
 
-# Function to display the existing templates and send the template data
+
+# Function to display the existing templates and send/update template data
 def display_and_send_template():
-    # Function to send the template data
+    # Function to send/update the template data
     def send_template():
         template_name = template_name_entry.get()
         template_body = template_body_entry.get("1.0", tk.END)[:-1]  # Remove the trailing newline character
         template_subject = template_subject_entry.get()
         template_html = template_html_entry.get("1.0", tk.END)[:-1]  # Remove the trailing newline character
-        sp.createtemplate(template_name,template_body,template_subject,template_html)
-        # Here, you can use the 'template_name', 'template_body', 'template_subject', and 'template_html'
-        # variables to send the data to your desired function or perform any other action.
 
+        # Check if the template name exists, and decide whether to create or update
+        if template_name in template_names:
+            # Update the existing template
+            sp.update_template(template_name, template_subject,template_body)
+            print(f"Updated template: {template_name}")
+        else:
+            # Create a new template
+            sp.createtemplate(template_name, template_body, template_subject, template_html)
+            print(f"Created template: {template_name}")
+
+        # Clear the entry fields after sending/updating
+        clear_fields()
+
+    # Function to clear the entry fields
+    def clear_fields():
+        template_name_entry.delete(0, tk.END)
+        template_body_entry.delete("1.0", tk.END)
+        template_subject_entry.delete(0, tk.END)
+        template_html_entry.delete("1.0", tk.END)
+
+    # Fetch existing templates
     templates = sp.list_templates()
     template_names = [template['Name'] for template in templates['TemplatesMetadata']]
-#
+
     window = tk.Tk()
     window.geometry("800x600")
 
@@ -53,11 +72,12 @@ def display_and_send_template():
     template_html_entry = tk.Text(window, height=5, width=40)
     template_html_entry.pack()
 
-    # Button to send template data
-    send_button = tk.Button(window, text="Send Template", command=send_template)
+    # Button to send/update template data
+    send_button = tk.Button(window, text="Send/Update Template", command=send_template)
     send_button.pack()
 
     window.mainloop()
 
-# Call the display_and_send_template function to display template names and send template data
-#display_and_send_template()
+
+# Call the display_and_send_template function to display template names and send/update template data
+display_and_send_template()

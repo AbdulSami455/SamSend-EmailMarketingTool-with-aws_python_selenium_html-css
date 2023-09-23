@@ -53,18 +53,13 @@ def sendemail(sourc,dest,subject,body):
 
 
 #Update Template
-def update_template():
- template_name = 'string3'
-
- updated_subject = 'Testing Email'
- updated_text_body = 'This is the updated text body of the email.'
-
+def update_template(templatename,updatedsubject,updatedtextbody):
 
  response2 = ses.update_template(
     Template={
-        'TemplateName': template_name,
-        'SubjectPart': updated_subject,
-        'TextPart': updated_text_body,
+        'TemplateName': templatename,
+        'SubjectPart': updatedsubject,
+        'TextPart': updatedtextbody,
 
     })
  print(response2)
